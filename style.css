@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', sans-serif;
+  background-color: #08080A;
+}
+
+body {
+  background:
+    radial-gradient(circle at 50% -10%, rgba(227, 6, 19, 0.30), transparent 55%),
+    radial-gradient(circle at 10% 110%, rgba(227, 6, 19, 0.14), transparent 50%),
+    #08080A;
+}
+
+button, select, a {
+  font-family: inherit;
+}
+
+/* Le select natif s'affiche en clair sur certains OS : on force le fond sombre */
+#languageSelect option {
+  background-color: #111115;
+  color: #EDEDF0;
+}
+
+#toast {
+  min-width: 220px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

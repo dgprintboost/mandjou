@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080A">
+  <title>MANDJOU CUSTOM — Covering, PPF, vitres teintées & céramique</title>
+  <meta name="description" content="Mandjou Custom — spécialiste covering, film de protection PPF, vitres teintées et traitement céramique. Devis rapide par WhatsApp.">
+
+  <link rel="icon" href="./logo-mandjou.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-ink text-chrome min-h-[100svh] flex items-center justify-center p-4">
+
+  <main class="relative w-full max-w-[480px] min-h-[750px] rounded-[32px] border border-white/10 bg-carbon/80 backdrop-blur-[20px] shadow-[0_40px_120px_rgba(0,0,0,0.8)] p-5 flex flex-col overflow-hidden">
+
+    <!-- Trame carbone + halos rouges -->
+    <div class="pointer-events-none absolute inset-0 bg-carbon-weave opacity-70"></div>
+    <div class="pointer-events-none absolute -top-28 -right-24 w-72 h-72 rounded-full bg-brand/25 blur-3xl"></div>
+    <div class="pointer-events-none absolute -bottom-32 -left-28 w-80 h-80 rounded-full bg-brand/12 blur-3xl"></div>
+
+    <div class="relative flex justify-end mb-1 animate-fade-in-up">
+      <div class="relative">
+        <select id="languageSelect" aria-label="Langue" class="appearance-none bg-white/5 border border-white/15 text-chrome text-xs font-bold rounded-full py-1.5 px-4 pr-8 cursor-pointer focus:outline-none focus:border-brand transition-colors">
+          <option value="fr">🇫🇷</option>
+          <option value="en">🇬🇧</option>
+          <option value="es">🇪🇸</option>
+          <option value="de">🇩🇪</option>
+          <option value="it">🇮🇹</option>
+          <option value="ar">🇸🇦</option>
+          <option value="pt">🇵🇹</option>
+          <option value="nl">🇳🇱</option>
+          <option value="ru">🇷🇺</option>
+          <option value="zh">🇨🇳</option>
+          <option value="ja">🇯🇵</option>
+          <option value="tr">🇹🇷</option>
+        </select>
+        <div class="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] pointer-events-none opacity-50">▼</div>
+      </div>
+    </div>
+
+    <!-- Identité : logo M puis wordmark de la bannière -->
+    <div class="relative flex flex-col items-center mb-5">
+      <div class="w-24 h-24 rounded-2xl bg-black border border-brand/40 shadow-glow mb-4 overflow-hidden animate-fade-in-up">
+        <img src="./logo-mandjou.jpg" alt="Logo Mandjou Custom" class="w-full h-full object-cover" width="1080" height="1080">
+      </div>
+
+      <!-- Le fond noir de la bannière se fond dans la carte : aucun raccord visible -->
+      <h1 class="w-full flex justify-center animate-fade-in-up [animation-delay:0.1s]">
+        <span class="relative block w-[78%] overflow-hidden">
+          <img src="./wordmark-mandjou.png" alt="MANDJOU" class="w-full h-auto block drop-shadow-[0_0_18px_rgba(227,6,19,0.45)]" width="962" height="96">
+          <span class="pointer-events-none absolute inset-y-0 -inset-x-1/3 w-1/3 bg-gradient-to-r from-transparent via-white/12 to-transparent animate-sheen"></span>
+        </span>
+      </h1>
+
+      <p class="text-[11px] font-bold uppercase tracking-[0.28em] text-brand mt-1 mb-3 animate-fade-in-up [animation-delay:0.15s]">Custom</p>
+
+      <div class="bg-brand/10 border border-brand/40 px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-chrome animate-fade-in-up [animation-delay:0.2s]" data-i18n="top_meta"></div>
+
+      <p class="text-center text-[13px] leading-relaxed text-smoke mt-4 px-3 animate-fade-in-up [animation-delay:0.25s]" data-i18n="tagline"></p>
+
+      <p class="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-smoke mt-3 animate-fade-in-up [animation-delay:0.3s]">
+        <i class="fa-solid fa-location-dot text-brand text-xs" aria-hidden="true"></i>
+        <span data-i18n="location"></span>
+      </p>
+    </div>
+
+    <!-- CTA principal : le devis WhatsApp -->
+    <a href="https://wa.me/message/KLKCZ7DA6BYZF1" target="_blank" rel="noopener noreferrer" class="relative flex items-center justify-center gap-2.5 bg-brand text-white rounded-2xl py-3.5 mb-4 text-xs font-black uppercase tracking-widest shadow-glow hover:-translate-y-1 hover:bg-ember transition-all active:scale-95 animate-fade-in-up [animation-delay:0.45s]">
+      <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+      <span data-i18n="cta_quote"></span>
+    </a>
+
+    <!-- Liens -->
+    <div class="relative flex-grow flex flex-col justify-center gap-2.5 mb-6">
+
+      <a href="https://www.instagram.com/mandjou.custom/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-white/[0.04] border border-white/10 rounded-2xl p-2.5 hover:-translate-y-1 hover:border-brand/60 hover:bg-white/[0.07] transition-all animate-fade-in-up [animation-delay:0.48s]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#F9CE63] via-[#E1568A] to-[#8E4BC4] text-white">
+            <i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i>
+          </div>
+          <div class="flex flex-col">
+            <strong class="text-sm">Instagram</strong>
+            <span class="text-[11px] text-smoke font-medium" data-i18n="ig_desc"></span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-white/25 text-xs pr-2 rtl:rotate-180" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.tiktok.com/@mandjou641" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-white/[0.04] border border-white/10 rounded-2xl p-2.5 hover:-translate-y-1 hover:border-brand/60 hover:bg-white/[0.07] transition-all animate-fade-in-up [animation-delay:0.52s]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-black border border-white/15 text-white">
+            <i class="fa-brands fa-tiktok text-lg" aria-hidden="true"></i>
+          </div>
+          <div class="flex flex-col">
+            <strong class="text-sm">TikTok</strong>
+            <span class="text-[11px] text-smoke font-medium" data-i18n="tt_desc"></span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-white/25 text-xs pr-2 rtl:rotate-180" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/demba-cisse-b77a42260/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between bg-white/[0.04] border border-white/10 rounded-2xl p-2.5 hover:-translate-y-1 hover:border-brand/60 hover:bg-white/[0.07] transition-all animate-fade-in-up [animation-delay:0.56s]">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-[#0A66C2] text-white">
+            <i class="fa-brands fa-linkedin-in text-lg" aria-hidden="true"></i>
+          </div>
+          <div class="flex flex-col">
+            <strong class="text-sm">LinkedIn</strong>
+            <span class="text-[11px] text-smoke font-medium" data-i18n="li_desc"></span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-white/25 text-xs pr-2 rtl:rotate-180" aria-hidden="true"></i>
+      </a>
+
+    </div>
+
+    <!-- Raccourcis -->
+    <div class="relative flex items-center justify-center gap-3 mb-6 animate-fade-in-up [animation-delay:0.64s]">
+      <a href="https://www.instagram.com/mandjou.custom/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 bg-white/5 border border-white/15 rounded-full flex items-center justify-center text-smoke hover:text-brand hover:border-brand/60 hover:-translate-y-1 transition-all"><i class="fa-brands fa-instagram text-lg" aria-hidden="true"></i></a>
+      <a href="https://www.tiktok.com/@mandjou641" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="w-10 h-10 bg-white/5 border border-white/15 rounded-full flex items-center justify-center text-smoke hover:text-brand hover:border-brand/60 hover:-translate-y-1 transition-all"><i class="fa-brands fa-tiktok text-lg" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/demba-cisse-b77a42260/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 bg-white/5 border border-white/15 rounded-full flex items-center justify-center text-smoke hover:text-brand hover:border-brand/60 hover:-translate-y-1 transition-all"><i class="fa-brands fa-linkedin-in text-lg" aria-hidden="true"></i></a>
+      <a href="https://wa.me/message/KLKCZ7DA6BYZF1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 bg-white/5 border border-white/15 rounded-full flex items-center justify-center text-smoke hover:text-brand hover:border-brand/60 hover:-translate-y-1 transition-all"><i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="relative grid grid-cols-2 gap-3 pt-6 border-t border-white/10 animate-fade-in-up [animation-delay:0.64s]">
+      <button id="saveBtn" class="bg-chrome text-ink border border-chrome rounded-xl py-3 text-xs font-black uppercase flex items-center justify-center gap-2 hover:-translate-y-1 transition-all active:scale-95">
+        <i class="fa-regular fa-address-card" aria-hidden="true"></i> <span data-i18n="save"></span>
+      </button>
+      <button id="shareBtn" class="bg-white/5 text-chrome border border-white/15 rounded-xl py-3 text-xs font-black uppercase flex items-center justify-center gap-2 hover:-translate-y-1 hover:border-brand/60 transition-all active:scale-95">
+        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i> <span data-i18n="share"></span>
+      </button>
+    </div>
+
+    <div class="relative text-center mt-6 opacity-45 text-[9px] font-bold uppercase tracking-widest text-smoke animate-fade-in-up [animation-delay:0.64s]" data-i18n="mini_note"></div>
+
+  </main>
+
+  <div id="toast" role="status" aria-live="polite" class="fixed bottom-8 left-1/2 -translate-x-1/2 bg-chrome text-ink text-xs font-bold px-6 py-2.5 rounded-full opacity-0 pointer-events-none transition-all duration-300 translate-y-4 z-50"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
