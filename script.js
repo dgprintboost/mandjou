@@ -248,17 +248,24 @@ document.getElementById("saveBtn").onclick = () => {
   const vcard = [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    `N:${PROFILE.vcardName};;;;`,
+    // N vide + X-ABShowAs:COMPANY : la fiche est une entreprise, sinon Apple
+    // range le nom de la marque dans le champ "Prénom".
+    "N:;;;;",
     `FN:${PROFILE.vcardName}`,
     `ORG:${PROFILE.vcardName}`,
     "X-ABShowAs:COMPANY",
     "TITLE:Covering, PPF, vitres teintées & traitement céramique",
     // Ville seule : l'adresse précise de l'atelier n'est pas publique
     "ADR;TYPE=WORK:;;;Aalst;;;Belgium",
-    `URL:${PROFILE.instagram}`,
-    `X-SOCIALPROFILE;TYPE=instagram:${PROFILE.instagram}`,
-    `X-SOCIALPROFILE;TYPE=tiktok:${PROFILE.tiktok}`,
-    `X-SOCIALPROFILE;TYPE=linkedin:${PROFILE.linkedin}`,
+    // URL étiquetées plutôt que X-SOCIALPROFILE : Apple Contacts n'affiche ce
+    // dernier que pour les services qu'il connaît, donc Instagram et TikTok
+    // apparaissaient en lignes vides dans la fiche.
+    `item1.URL:${PROFILE.instagram}`,
+    "item1.X-ABLabel:Instagram",
+    `item2.URL:${PROFILE.tiktok}`,
+    "item2.X-ABLabel:TikTok",
+    `item3.URL:${PROFILE.linkedin}`,
+    "item3.X-ABLabel:LinkedIn",
     `NOTE:Contact WhatsApp: ${PROFILE.whatsapp}`,
     "END:VCARD",
   ].join("\n");
